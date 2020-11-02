@@ -19,4 +19,8 @@ class Event extends Model
         'description',
         'ticket',
     ];
+
+    protected $casts = [
+        'ticket' => 'array',
+    ];
 }

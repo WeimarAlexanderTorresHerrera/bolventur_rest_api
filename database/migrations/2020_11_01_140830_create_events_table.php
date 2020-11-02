@@ -22,7 +22,7 @@ class CreateEventsTable extends Migration
             $table->string('location', 600);
             $table->string('host', 600);
             $table->string('description', 600);
-            $table->string('ticket', 600);
+            $table->json('ticket');
             $table->timestamps();
         });
     }
